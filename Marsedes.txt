@@ -1,0 +1,1 @@
+The Name : mars1 The Id: 10000 The Colour : red The Price : 20000//The Name : mars2 The Id: 25263 The Colour : wshite\ The Price : 300000000000//The Name : mars3 The Id: 3256 The Colour : black The Price : 540000//
