@@ -1,56 +1,6 @@
     using System;
     using System.IO;
-    public interface Cars{
-      public string Name { get; set; }
-      public int Id { get; set; }
-      public string Color { get; set; }
-      public double Price { get; set; }
-     public void Add_Data();
-      string [] Show_Data();
-    }
-    public class Marsedes : Cars
-    {
-      public string Name { get; set; }
-      public int Id { get; set; }
-      public string Color { get; set; }
-      public double Price { get; set; }
-     public void Add_Data(){
-        File.AppendAllText("Marsedes.txt","The Name : "+this.Name + " The Id: " + this.Id + " The Colour : " + this.Color + " The Price : " + this.Price + "//");
-      }
-      public string [] Show_Data(){
-        string data = File.ReadAllText("Marsedes.txt");
-        return data.Split(new string[] { "//" }, StringSplitOptions.None);
-      }
-      }
-    public class Benz : Cars
-      {
-        public string Name { get; set; }
-          public int Id { get; set; }
-          public string Color { get; set; }
-          public double Price { get; set; }
-         public void Add_Data(){
-           File.AppendAllText("Benz.txt","The Name : "+this.Name + " The Id: " + this.Id + " The Colour : " + this.Color + " The Price : " + this.Price + "//");
-      }
-        public string [] Show_Data(){
-          string data = File.ReadAllText("Benz.txt");
-          return data.Split(new string[] { "//" }, StringSplitOptions.None);
-        }
-    }
-    public class Audi : Cars
-        {
-          public string Name { get; set; }
-            public int Id { get; set; }
-            public string Color { get; set; }
-            public double Price { get; set; }
-           public void Add_Data(){
-             File.AppendAllText("Audi.txt","The Name : "+this.Name + " The Id: " + this.Id + " The Colour : " + this.Color + " The Price : " + this.Price + "//");
-        }
-          public string [] Show_Data(){
-            string data = File.ReadAllText("Audi.txt");
-            return data.Split(new string[] { "//" }, StringSplitOptions.None);
-          }
-    }
-    class Program {
+partial class Program {
       public static void Main (string[] args) 
       {
         string answer;
@@ -169,5 +119,6 @@
         }while (answer == "Y" || answer == "y");
         if(answer == "N" || answer == "n"){
           Console.WriteLine("Thank You For Using Our Program");
+          }
         }
-          }}
+        }
